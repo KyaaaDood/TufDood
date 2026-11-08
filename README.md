@@ -147,7 +147,6 @@ You normally **don't need it**: everything is changed from the window. It lives 
 - 🔒 The ASUS power mode **can't be read back** on the FA506IU (the driver always answers the same value), so TufDood remembers the last mode it applied. If you change the mode with another tool, TufDood won't notice.
 - 🔋 Not every laptop exposes the battery limit. If it's missing, the window says *Not available*.
 - 🔌 Keep your laptop plugged in most of the time? An **80 %** limit is a good choice.
-- 🔁 **Coming from ATL?** 🏷️ TufDood is the new name. The first time it opens it imports the old settings (`%AppData%\ATL`) and replaces the old "ATL" startup task.
 - 🧪 Changing power limits can make your laptop hotter, noisier or unstable if you push it. Keep reasonable values.
 
 ## 🆘 Troubleshooting
