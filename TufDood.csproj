@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>tufdood.ico</ApplicationIcon>
+    <AssemblyName>TufDood</AssemblyName>
+    <RootNamespace>TufDood</RootNamespace>
+    <Version>0.1.0</Version>
+    <Authors>KyaaaDood</Authors>
+    <Company>KyaaaDood</Company>
+    <Product>TufDood</Product>
+
+    <!-- Sin archivo PDB: así la ruta de tu carpeta (que incluye tu usuario de Windows)
+         no queda guardada dentro del .exe / .dll -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+
+    <!-- Precompila el código (ReadyToRun): menos trabajo de JIT al abrir, así la ventana aparece más rápido.
+         Solo aplica con "dotnet publish -r win-x64". Si el build fallara (p. ej. sin internet para
+         descargar el paquete crossgen), borra esta línea y todo sigue igual, solo que más lento al abrir. -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Escuchar la tecla Fn+F5 (evento WMI de ASUS) -->
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <!-- El ícono también va incrustado para usarlo en la ventana y en la bandeja -->
+  <ItemGroup>
+    <EmbeddedResource Include="tufdood.ico" LogicalName="tufdood.ico" />
+  </ItemGroup>
+
+  <!-- Copia la carpeta ryzenadj (junto al exe) a la salida si existe -->
+  <ItemGroup>
+    <None Include="ryzenadj\**\*" CopyToOutputDirectory="PreserveNewest" LinkBase="ryzenadj" />
+  </ItemGroup>
+
+</Project>
