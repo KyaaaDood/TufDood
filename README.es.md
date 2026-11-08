@@ -147,7 +147,6 @@ Normalmente **no lo necesitas**: todo se cambia desde la ventana. Está en `%App
 - 🔒 El modo de energía ASUS **no se puede leer de vuelta** en la FA506IU (el driver contesta siempre el mismo valor), por eso TufDood recuerda el último modo que aplicó. Si cambias el modo con otra herramienta, TufDood no se entera.
 - 🔋 No todas las laptops exponen el límite de batería. Si no está, la ventana dice *No disponible*.
 - 🔌 ¿Casi siempre tienes la laptop conectada? Un límite de **80 %** es buena opción.
-- 🔁 **¿Vienes de ATL?** 🏷️ TufDood es el nuevo nombre. La primera vez que abre importa los ajustes anteriores (`%AppData%\ATL`) y reemplaza la tarea de inicio "ATL".
 - 🧪 Cambiar los límites de potencia puede hacer que tu laptop se caliente más, haga más ruido o se vuelva inestable si te pasas. Usa valores razonables.
 
 ## 🆘 Solución de problemas
