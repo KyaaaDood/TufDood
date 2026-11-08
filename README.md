@@ -42,12 +42,11 @@ Notes:
 - Windows Defender may quarantine `WinRing0x64.sys` (the driver RyzenAdj uses). If TufDood reports an error, check that the file is still there.
 - On the FA506IU, RyzenAdj exits with `0xC0000005` after applying the limit and prints nothing. TufDood treats that case as applied. To verify, run `.\ryzenadj.exe -i` in a console and look at **THM LIMIT CORE**.
 - The ASUS mode cannot be read back on the FA506IU (the driver always answers the same value), so TufDood remembers the last mode it applied.
-- Coming from a version called ATL: TufDood imports its settings the first time and replaces the old "ATL" startup task.
 
 ## Credits
 
 Made by KyaaaDood with Claude AI. 🤖✨
 
-Follow my work on [GitHub](https://github.com/kyaaadood) and, if you want to support the project, you can do it on [Patreon](https://www.patreon.com/cw/KyaaaDood).
+Follow my work on [GitHub](https://github.com/kyaaadood) and, if you want to support me, you can do it on [Patreon](https://www.patreon.com/cw/KyaaaDood).
 
 TufDood uses [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) (LGPL-3.0, not included). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
